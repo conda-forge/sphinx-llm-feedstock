@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sphinx-llm
-  version: "0.1.4"
+  version: "0.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sphinx_llm-${{ version }}.tar.gz
-  sha256: be0032b62809548edc0131ecffffaba9617ff8aaebf19bf5c2c1d18d1b7af557
+  sha256: 6115ad68eeebdd47917cb56037c0bdbd1290b9dda3703348e4bd1e7307059652
 
 build:
   number: 0

@@ -13,7 +13,7 @@ source:
   sha256: 5f3b41c0d7888c75a6fe9f92b1a965c50ee233eaf38673c0ef3501072599c617
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -27,7 +27,7 @@ requirements:
     - python >=${{ python_min }}
     - sphinx-markdown-builder >=0.6.8
     - sphinx >=5
-    - markdown-it-py
+    - markdown-it-py >=3
 
 tests:
   - python:

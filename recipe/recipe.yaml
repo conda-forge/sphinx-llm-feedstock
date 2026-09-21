@@ -27,15 +27,13 @@ requirements:
     - python >=${{ python_min }}
     - sphinx-markdown-builder >=0.6.8
     - sphinx >=5
-    - markdown-it-py
+    - markdown-it-py >=3
 
 tests:
   - python:
       imports:
         - sphinx_llm
-      python_version:
-        - ${{ python_min }}
-        - "*"
+      python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
